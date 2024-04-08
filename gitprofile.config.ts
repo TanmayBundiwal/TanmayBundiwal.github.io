@@ -89,6 +89,7 @@ const CONFIG = {
     'Docker',
     'CSS',
     'AWS',
+    'Python'
   ],
   experiences: [
     {
