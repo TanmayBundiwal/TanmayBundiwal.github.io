@@ -18,6 +18,9 @@ interface AvatarCardProps {
  * @param resumeFileUrl - The URL of the resume file.
  * @returns JSX element representing the AvatarCard.
  */
+
+const myBio = 'CS grad @ UBC | Strong Technical foundation | 1+ Years intense work experience in business';
+
 const AvatarCard: React.FC<AvatarCardProps> = ({
   profile,
   loading,
@@ -48,7 +51,8 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
             >
               {
                 <LazyImage
-                  src={profile.avatar ? profile.avatar : FALLBACK_IMAGE}
+                  // src={profile.avatar ? profile.avatar : FALLBACK_IMAGE}
+                  src="/Profile_closer_2.png"
                   alt={profile.name}
                   placeholder={skeleton({
                     widthCls: 'w-full',
@@ -73,7 +77,7 @@ const AvatarCard: React.FC<AvatarCardProps> = ({
           <div className="mt-3 text-base-content text-opacity-60 font-mono">
             {loading || !profile
               ? skeleton({ widthCls: 'w-48', heightCls: 'h-5' })
-              : profile.bio}
+              : myBio}
           </div>
         </div>
         {resumeFileUrl &&
