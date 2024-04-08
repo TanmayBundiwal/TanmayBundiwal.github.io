@@ -14,10 +14,10 @@ const CONFIG = {
     github: {
       display: true, // Display GitHub projects?
       header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
+        limit: 12, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
@@ -25,7 +25,7 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['TanmayBundiwal/cosmic-dashboard', 'TanmayBundiwal/DeathRowViz'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['TanmayBundiwal/cosmic-dashboard', 'TanmayBundiwal/DeathRowViz', 'TanmayBundiwal/StudentQueryGrade'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -96,57 +96,93 @@ const CONFIG = {
       position: 'Financial Strategy Consultant',
       from: 'September 2021',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://linkedin.com/company/rama-retromarks-private-limited',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Rama Retro Reflectives',
+      position: 'Business Strategy Consultant & Sign Board Designer',
+      from: 'May 2023',
+      to: 'Present',
+      companyLink: 'https://linkedin.com/company/rama-retro-reflectives',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'AWS Certified Cloud Practioner',
+      body: 'Amazon Web Services (AWS)',
+      year: 'February 2024',
+      link: 'https://www.credly.com/badges/871d2e2e-4dec-43f0-8371-4f113cd7b4c5/linked_in_profile',
+    },
+    {
+      name: 'Agile with Atlassian Jira',
+      body: 'Atlassian University',
+      year: 'December 2023',
+      link: 'https://www.coursera.org/account/accomplishments/certificate/9EKVCGFGSBE7',
+    },
+    {
+      name: 'SaaS MasterClass: Sales, Marketing & Growth Metrics',
+      body: 'Udemy',
+      year: 'November 2023',
+      link: 'https://www.udemy.com/certificate/UC-4a70ee6f-89c5-4301-aac0-ac5fc46c6f03/',
+    },
+    {
+      name: 'Containerization using Docker',
+      body: 'Coursera',
+      year: 'April 2024',
+      link: 'https://www.coursera.org/account/accomplishments/certificate/GKKBSWFM2UQV',
+    },
+    {
+      name: 'Tools of the Trade: Linux CLI & SQL',
+      body: 'Google',
+      year: 'March 2024',
+      link: 'https://www.coursera.org/account/accomplishments/certificate/7L27YSXSYGZ3',
+    },
+    {
+      name: 'Node.js Backend Best Practices',
+      body: 'Coursera',
+      year: 'December 2023',
+      link: 'https://www.coursera.org/account/accomplishments/certificate/2WVXCBP2PX5X',
+    },
+    {
+      name: 'AWS Cloud Essentials',
+      body: 'Amazon Web Services (AWS)',
+      year: 'January 2024',
+      link: 'https://www.credly.com/badges/6c391d37-a23e-483b-977b-bd5aa1f5109e/linked_in_profile',
+    },
+    {
+      name: 'What is Data Science?',
+      body: 'IBM',
+      year: 'January 2019',
+      link: 'https://www.coursera.org/account/accomplishments/certificate/V9BEJ758EGM3',
+    },
+    {
+      name: '*Currently Pursuing* AWS Certified Solutions Architect - Associate',
+      body: 'Amazon Web Services (AWS)',
+      // year: 'January 2019',
+      // link: 'https://www.coursera.org/account/accomplishments/certificate/V9BEJ758EGM3',
+    },
+    {
+      name: '*Currently Pursuing* Financial Markets',
+      body: 'Yale University',
+      // year: 'January 2019',
+      // link: 'https://www.coursera.org/account/accomplishments/certificate/V9BEJ758EGM3',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'University of British Columbia - UBC Vancouver',
+      degree: 'Bachelor of Science in Computer Science',
+      from: '2020',
+      to: '2023',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'International Center for Applied Sciences - ICAS Manipal',
+      degree: 'Bachelor of Science in Computer Science',
+      from: '2018',
+      to: '2020',
     },
   ],
   publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
